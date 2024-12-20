@@ -150,7 +150,7 @@ describe('Dado que o usuário acessa a página de cadastro', function () {
         it('Então o sistema deve redirecionar para o site do Cypress', function () {
 
             SignupPage.go()
-            SignupPage.siteCypressShould()
+            SignupPage.CypressImgShoudRedirectTo('https://www.cypress.io/')
         })
     })
 })
