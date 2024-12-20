@@ -70,7 +70,7 @@ const SignupPage = {
 
     CypressImgShoudRedirectTo: function (url) {
         cy.get(el.cypressLogotype).should('have.attr', 'onclick', `window.location.href='${url}'`)
-    }
+    },
 }
 
 export default SignupPage
