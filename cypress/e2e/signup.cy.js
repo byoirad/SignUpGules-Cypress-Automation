@@ -138,14 +138,14 @@ describe('Dado que o usuário acessa a página de cadastro', function () {
 
     context('Quando ele clica na “logo do site”', function () {
 
-        it('Entáo o sistema deve redirecionar para o site da logo', function () {
+        it('Então o sistema deve redirecionar para o site da logo', function () {
 
             SignupPage.go()
             SignupPage.siteShouldBe()
         })
     })
 
-    context('Ele clica no logotipo do Cypress', function () {
+    context('Quando ele clica no logotipo do Cypress', function () {
 
         it('Então o sistema deve redirecionar para o site do Cypress', function () {
 
