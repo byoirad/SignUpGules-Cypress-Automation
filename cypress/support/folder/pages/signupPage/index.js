@@ -68,8 +68,8 @@ const SignupPage = {
         cy.get(el.logoType).should('have.attr', 'onclick', "window.location.href='https://sign-up-gules.vercel.app/")
     },
 
-    siteCypressShould: function () {
-        cy.get(el.cypressLogotype).should('have.attr', 'onclick', "window.location.href='https://www.cypress.io/'")
+    CypressImgShoudRedirectTo: function (url) {
+        cy.get(el.cypressLogotype).should('have.attr', 'onclick', `window.location.href='${url}'`)
     }
 }
 
